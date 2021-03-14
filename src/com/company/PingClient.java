@@ -59,6 +59,7 @@ public class PingClient
 
                 socket.setSoTimeout(total_timeout);
 
+
                 // Create a new UDP packet, and wait for server to respond
                 DatagramPacket response = new DatagramPacket(new byte[1024], 1024);
                 socket.receive(response);
